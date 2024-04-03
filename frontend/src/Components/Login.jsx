@@ -21,7 +21,7 @@ const Login = () => {
     event.preventDefault();
 
     axios
-      .post("https://auth-pages-backend.vercel.app/users/login", { mobile, password })
+      .post("https://auth-pages-delta.vercel.app/users/login", { mobile, password })
       .then((result) => {
         console.log(result);
         if (result.data === "Success") {

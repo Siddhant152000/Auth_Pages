@@ -11,7 +11,7 @@ app.use(cors());
 
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://siddhantd2000:HGXizQ42uN9us3A8@formdata.z8eunnu.mongodb.net/?retryWrites=true&w=majority&appName=formData';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://siddhantd2000:siddhant1511@cluster0.lymkq6v.mongodb.net/';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB Connected'))
@@ -19,7 +19,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
 
 
 app.get('/', (req,res)=>{
-    res.send("Server Stated Successfully")
+    res.send("Server Started Successfully")
 });
 
 app.use('/users',signUp_login)

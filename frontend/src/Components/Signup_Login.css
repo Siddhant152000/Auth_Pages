@@ -1,106 +1,3 @@
-/* .container{
-    position: relative;
-    left: 60px;
-
-  } 
-  .background {
-    background: #000046; 
-    background: -webkit-linear-gradient(
-      to bottom,
-      #1cb5e0,
-      #000046
-    ); 
-    background: linear-gradient(
-      to bottom,
-      #1cb5e0,
-      #000046
-    ); 
-  
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .signup-form,
-  .login-form {
-    max-width: 500px;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
-  }
-  
-  .signup-form h2,
-  .login-form h2 {
-    text-align: center;
-  }
-  
-  .btn-link {
-    text-decoration: underline;
-    background: none;
-    border: none;
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  .btn-link:hover {
-    color: #0056b3;
-  }
-  .buttonone{
-    position: relative;
-    left: 190px;
-    bottom: 46.5px;
-  }
-  .buttontwo{
-    position: relative;
-    left: 170px;
-    bottom: 46.5px;
-  }
-  .colorone{
-    color: #0056b3;
-  }
-  .colortwo{
-    color: #0056b3;
-  }
-
-  .toggle-password-signup {
-    position: absolute;
-    top: 68.5%;
-    right: 39.3%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
-  .toggle-password-login {
-    position: absolute;
-    top: 51%;
-    right: 39.5%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 80%;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .container {
-      width: 90%;
-    }
-  }
-
- 
-  
- 
-   */
-
 .container {
   margin: 0 auto;
   width: 80%;
@@ -152,7 +49,7 @@
 
 .toggle-password-signup {
   position: absolute;
-  top: 69.2%;
+  top: 73%;
   right: 39.3%;
   transform: translateY(-50%);
   cursor: pointer;

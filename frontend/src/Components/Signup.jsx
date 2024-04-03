@@ -21,6 +21,8 @@ const Signup = () => {
   };
 
   const handleSubmit = (event) => {
+
+    console.log(fname)
     event.preventDefault();
     if (!validateMobile(mobile) || !validateEmail(email) || !validateDOB(dob)) {
       return;
@@ -31,7 +33,7 @@ const Signup = () => {
     const chosenPassword = password === "randomFourDigits" ? randomFourDigits.toString() : lastFourDigits.toString();
 
     axios
-      .post("https://auth-pages-backend.vercel.app/users/signup", {
+      .post("https://auth-pages-delta.vercel.app/users/signup", {
         fname,
         lname,
         email,
