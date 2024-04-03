@@ -197,16 +197,6 @@ const Signup = () => {
                       )}
                     </span>
                   </div>
-                  {/* <div className="form-group p-2">
-                    <input
-                      type="file"
-                      className="form-control"
-                      id="InputImage"
-                      onChange={handleImageChange}
-                      accept=".jpg,.jpeg,.png" 
-                      required
-                    />
-                  </div> */}
                   <div className="form-group p-2">
                     <button type="submit" className="btn btn-primary btn-block">
                       Signup
