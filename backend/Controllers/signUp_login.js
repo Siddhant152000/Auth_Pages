@@ -1,4 +1,4 @@
-const userDetails = require("../Models/UserDetails");
+const userDetails = require("../Models/UserDetails.js");
 
 exports.signUp = (req, res) => {
   const { fname, lname, email, mobile, gender, dob, address, password } = req.body;
