@@ -1,7 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
-const routes = require('./Routes/signUp_login'); 
+const signUp_login = require('./Routes/signUp_login'); 
 const dotenv = require('dotenv').config();
 
 
@@ -18,7 +18,11 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
     .catch(err => console.log(err));
 
 
-app.use('/', routes);
+app.get('/', (req,res)=>{
+    res.send("Server Stated Successfully")
+});
+
+app.use('/users',signUp_login)
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
