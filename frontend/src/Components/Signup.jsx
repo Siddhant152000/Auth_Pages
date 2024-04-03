@@ -13,8 +13,7 @@ const Signup = () => {
   const [address, setAddress] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
-  const [image, setImage] = useState("");
-
+  
   const navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
@@ -32,7 +31,7 @@ const Signup = () => {
     const chosenPassword = password === "randomFourDigits" ? randomFourDigits.toString() : lastFourDigits.toString();
 
     axios
-      .post("http://localhost:3001/signup", {
+      .post("https://auth-pages-backend.vercel.app/users/signup", {
         fname,
         lname,
         email,
@@ -41,7 +40,6 @@ const Signup = () => {
         address,
         dob,
         gender,
-        image,
       })
       .then((result) => {
         console.log(result);
@@ -88,25 +86,6 @@ const Signup = () => {
     }
     
     return true;
-  };
-
-  const validateImageType = (image) => {
-    if (!image) {
-      alert("Please select an image file");
-      return false;
-    }
-    
-    const allowedTypes = ['image/jpeg', 'image/png'];
-    if (!allowedTypes.includes(image.type)) {
-      alert("Please select a JPG or PNG image file");
-      return false;
-    }
-    
-    return true;
-  };
-
-  const handleImageChange = (event) => {
-    setImage(event.target.files[0]);
   };
 
   return (
@@ -218,7 +197,7 @@ const Signup = () => {
                       )}
                     </span>
                   </div>
-                  <div className="form-group p-2">
+                  {/* <div className="form-group p-2">
                     <input
                       type="file"
                       className="form-control"
@@ -227,7 +206,7 @@ const Signup = () => {
                       accept=".jpg,.jpeg,.png" 
                       required
                     />
-                  </div>
+                  </div> */}
                   <div className="form-group p-2">
                     <button type="submit" className="btn btn-primary btn-block">
                       Signup

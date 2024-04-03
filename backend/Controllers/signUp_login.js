@@ -8,7 +8,7 @@ exports.signUp = (req, res) => {
     } else {
       userDetails
         .create(req.body)
-        .then((signup_signin) => res.json(signup_signin))
+        .then((formData) => res.json(formData))
         .catch((err) => res.json(err));
     }
   });

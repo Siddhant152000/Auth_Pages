@@ -8,14 +8,10 @@ const userDetailSchema = new mongoose.Schema({
     gender:String,
     dob:Date,
     address:String,
-    password: String,
-    image: {
-        data: Buffer,
-        contentType: String 
-    }
+    password: String
     
 })
 
-const userDetails = mongoose.model('signup_sign', userDetailSchema);
+const userDetails = mongoose.model('formData', userDetailSchema);
 
 module.exports = userDetails;
