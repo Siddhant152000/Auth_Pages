@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Environment variables file
+.env
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+logs/
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore environment-specific configuration
+config/
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore database storage
+/data/
+
+# Ignore build artifacts
+build/
+
+# Ignore local development server configurations
+server-config.json
