@@ -49,7 +49,7 @@ const Signup = () => {
           alert("E-mail already registered! Please Login to proceed.");
           navigate("/login");
         } else {
-          alert("Registered successfully! Please Login to proceed.");
+          alert("Registered successfully! Your Password is last four digit of mobile no.");
           navigate("/login");
         }
       })
