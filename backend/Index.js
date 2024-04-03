@@ -11,7 +11,7 @@ app.use(cors());
 
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/SignUp_SignIn';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://siddhantd2000:Sig6psz7GqR3sO3A@userdetails.oswl47q.mongodb.net/?retryWrites=true&w=majority&appName=userDetails';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB Connected'))
