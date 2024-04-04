@@ -179,26 +179,7 @@ const Signup = () => {
                       placeholder="Address"
                     />
                   </div>
-                  {/* <div className="form-group p-2">
-                    <input
-                      type={passwordVisible ? "text" : "password"}
-                      placeholder="Enter Password"
-                      className="form-control"
-                      id="InputPassword"
-                      onChange={(event) => setPassword(event.target.value)}
-                      required
-                    />
-                    <span
-                      className="toggle-password-signup"
-                      onClick={togglePasswordVisibility}
-                    >
-                      {passwordVisible ? (
-                        <i className="fas fa-eye"></i>
-                      ) : (
-                        <i className="fas fa-eye-slash"></i>
-                      )}
-                    </span>
-                  </div> */}
+                  
                   <div className="form-group p-2">
                     <button type="submit" className="btn btn-primary btn-block">
                       Signup
