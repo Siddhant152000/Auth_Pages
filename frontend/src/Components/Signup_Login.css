@@ -73,17 +73,60 @@
   bottom: 46.5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and  (max-width: 768px) {
   .container {
     width: 80%;
   }
   .toggle-password-signup {
-    top: 85.2%;
-    right: 11.3%;
+    top: 72.5%;
+    right: 20.3%;
   }
   .toggle-password-login{
-    top: 50%;
+    top: 50.5%;
+    right: 20.5%;
+  }
+}
+
+@media screen and  (min-width: 628px) {
+  .container {
+    width: 80%;
+  }
+  .toggle-password-signup {
+    top: 72.5%;
+    right: 15.3%;
+  }
+  .toggle-password-login{
+    top: 50.5%;
+    right: 15.5%;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 729px) {
+  .container {
+    width: 80%;
+  }
+  .toggle-password-signup {
+    top: 72.5%;
+    right: 12%;
+  }
+  .toggle-password-login{
+    top: 50.5%;
+    right: 11.5%;
+  }
+}
+
+@media screen and  (min-width: 355px) {
+  .container {
+    width: 80%;
+  }
+  .toggle-password-signup {
+    top: 72.5%;
+    right: 13.3%;
+  }
+  .toggle-password-login{
+    top: 50.5%;
     right: 12.5%;
   }
 }
+
+
 
