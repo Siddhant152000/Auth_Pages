@@ -165,6 +165,7 @@ const Signup = () => {
                       className="form-control"
                       name="dob"
                       id="Inputdob"
+                      placeholder="dd-mm-yyyy"
                       onChange={(event) => setDob(event.target.value)}
                       required
                     />
@@ -179,7 +180,7 @@ const Signup = () => {
                       placeholder="Address"
                     />
                   </div>
-                  
+
                   <div className="form-group p-2">
                     <button type="submit" className="btn btn-primary btn-block">
                       Signup
