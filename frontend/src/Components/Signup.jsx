@@ -179,7 +179,7 @@ const Signup = () => {
                       placeholder="Address"
                     />
                   </div>
-                  <div className="form-group p-2">
+                  {/* <div className="form-group p-2">
                     <input
                       type={passwordVisible ? "text" : "password"}
                       placeholder="Enter Password"
@@ -198,7 +198,7 @@ const Signup = () => {
                         <i className="fas fa-eye-slash"></i>
                       )}
                     </span>
-                  </div>
+                  </div> */}
                   <div className="form-group p-2">
                     <button type="submit" className="btn btn-primary btn-block">
                       Signup
@@ -219,6 +219,5 @@ const Signup = () => {
 };
 
 export default Signup;
-
 
 
